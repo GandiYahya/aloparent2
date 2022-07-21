@@ -137,7 +137,7 @@ public class LoginScreen extends AppCompatActivity {
     private void sendData(String temp_Email, String temp_password) {
         progressBar.setVisibility(View.VISIBLE);
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String URL = "http://192.168.43.247:3000/users/login";
+        String URL = "http://10.131.99.24:3000/users/login";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -170,7 +170,7 @@ public class LoginScreen extends AppCompatActivity {
 
     private void getUserInfromation(String email){
         RequestQueue requestQueue1 = Volley.newRequestQueue(this);
-        String URL = "http://192.168.43.247:3000/users/"+email;
+        String URL = "http://10.131.99.24:3000/users/"+email;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
