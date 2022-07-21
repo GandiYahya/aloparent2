@@ -37,6 +37,8 @@ public class DataAnak extends AppCompatActivity {
 
         data_anak1 = findViewById(R.id.data_anak_1);
 
+        data_anak1.setEnabled(false);
+
         int pembelajranAnak1 = 0;
 
         SharedPreferences mPrefs = getSharedPreferences("IDvalue",0);
