@@ -175,7 +175,7 @@ public class Kelas extends AppCompatActivity {
         String email = user.getUserMail(), username = user.getUserName(), password = user.getUserPassword(), image = user.getUserImage();
         tv_UserName.setText(username);
         Picasso.get()
-                .load("http://192.168.43.247:3000/users/userImage/"+email)
+                .load("http://192.168.43.109:3000/users/userImage/"+email)
                 .fit()
                 .centerCrop()
                 .into(foto_profil_anak);

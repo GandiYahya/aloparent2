@@ -53,7 +53,7 @@ public class ProfileScreen extends AppCompatActivity {
         inputEmailLogin.setText(email);
         kataSandi.setText(password);
         Picasso.get()
-                .load("http://10.131.99.24:3000/users/userImage/"+email)
+                .load("http://192.168.43.109:3000/users/userImage/"+email)
                 .fit()
                 .centerCrop()
                 .into(profile_picture);

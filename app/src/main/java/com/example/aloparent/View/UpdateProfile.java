@@ -44,7 +44,7 @@ public class UpdateProfile extends AppCompatActivity {
     private static final int REQUEST_PERMISSIONS = 100;
     private static final int PICK_IMAGE_REQUEST =1 ;
     private String filePath;
-    private String url = "http://192.168.43.247:3000/users/updateProfile";
+    private String url = "http://192.168.43.109:3000/users/updateProfile";
     private CircleImageView profile_picture;
     private AppCompatButton btn_TakePhoto, btnSimpan;
     private EditText inputUsername, inputEmailLogin, inputKataSandi;
@@ -200,7 +200,7 @@ public class UpdateProfile extends AppCompatActivity {
 
     private void getUserInfromation(String email){
         RequestQueue requestQueue1 = Volley.newRequestQueue(this);
-        String URL = "http://192.168.43.247:3000/users/"+email;
+        String URL = "http://192.168.43.109:3000/users/"+email;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,

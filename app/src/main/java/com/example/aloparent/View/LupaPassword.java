@@ -64,7 +64,7 @@ public class LupaPassword extends AppCompatActivity {
         JSONObject object = new JSONObject();
         try{
             RequestQueue requestQueue = Volley.newRequestQueue(this);
-            String URL = "http://10.131.99.24:3000/users/check";
+            String URL = "http://192.168.43.109:3000/users/check";
             object.put("username", username);
             object.put("email", email);
 

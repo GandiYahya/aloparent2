@@ -130,7 +130,7 @@ public class RegisterScreen extends AppCompatActivity {
         JSONObject object = new JSONObject();
         try {
             RequestQueue requestQueue = Volley.newRequestQueue(this);
-            String URL = "http://10.131.99.24:3000/users";
+            String URL = "http://192.168.43.109:3000/users";
             object.put("id_user", id_user);
             object.put("username", temp_username);
             object.put("email", temp_email);

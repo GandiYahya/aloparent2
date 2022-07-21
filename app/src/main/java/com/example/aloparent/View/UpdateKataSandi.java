@@ -73,7 +73,7 @@ public class UpdateKataSandi extends AppCompatActivity {
         JSONObject jsonObject = new JSONObject();
         try{
             RequestQueue requestQueue = Volley.newRequestQueue(this);
-            String URL = "http://192.168.43.247:3000/users/reset";
+            String URL = "http://192.168.43.109:3000/users/reset";
             jsonObject.put("email", Uemail);
             jsonObject.put("password", Upassword);
 
