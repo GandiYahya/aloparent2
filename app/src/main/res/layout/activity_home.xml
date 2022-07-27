@@ -45,18 +45,18 @@
                     android:id="@+id/foto_profil_orangtua"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:onClick="ToProfile"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/logo_icon_app_home"
+                   />
 
                 <TextView
+                    android:id="@+id/tv_UserName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_UserName"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/foto_profil_orangtua"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Hello, Lesti!"
+                    android:text="Hello Orang Tua"
                     android:textColor="#515151"
                     android:textSize="20dp" />
 
@@ -66,23 +66,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true">
 
-                    <ImageView
-                        android:onClick="toNotifikasi"
-                        android:layout_width="25.82dp"
-                        android:layout_height="33.77dp"
-                        android:layout_marginBottom="16dp"
-                        android:src="@drawable/ic_notification_home"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:layout_width="11.65dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_notificaton"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -99,65 +82,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="30dp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Pencapaian anak hari ini"
+                    android:text="Pencapaian anak"
                     android:textColor="#535351"
                     android:textSize="13dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="30dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:onClick="anotherChildData"
-                    android:text="Lihat data lain"
-                    android:textColor="#6FBDE9"
-                    android:textSize="13dp" />
         </RelativeLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:paddingVertical="20dp"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/btn_rectangle_blue">
 
-                    <LinearLayout
-                        android:id="@+id/tambahDataAnak"
-                        android:onClick="inputDataAnak"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:orientation="horizontal"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:layout_width="23.33dp"
-                            android:layout_height="23.33dp"
-                            android:src="@drawable/ic_tambah_data" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:gravity="center"
-                            android:text="Tambah data anak"
-                            android:textColor="@color/white"
-                            android:textSize="13dp"
-                            />
-
-                    </LinearLayout>
-
                     <RelativeLayout
                         android:layout_marginTop="10dp"
                         android:id="@+id/data_anak"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -165,62 +107,24 @@
                             android:id="@+id/homeSeekbar"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_above="@id/nama_anak"
-                            android:layout_marginHorizontal="15dp"
                             android:max="300"
                             android:minWidth="5dp"
                             android:progressDrawable="@drawable/seek_bar"
-                            android:thumb="@drawable/icon_progress_bar_boy" />
+                            android:thumb="@drawable/icon_progress_bar" />
 
                         <TextView
+                            android:layout_marginTop="10dp"
                             android:id="@+id/nama_anak"
-                            android:layout_above="@id/umur_anak"
                             android:layout_width="wrap_content"
-                            android:layout_height="18dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/homeSeekbar"
                             android:layout_marginLeft="19sp"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/poppins_semibold"
-                            android:text="Putri Hanifah"
+                            android:text="Pantau Progress Kelas"
                             android:textColor="@color/white"
                             android:textSize="16dp" />
 
-                        <TextView
-                            android:layout_above="@id/text_dukung_anak"
-                            android:id="@+id/umur_anak"
-                            android:layout_width="90dp"
-                            android:layout_height="21dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginBottom="4dp"
-                            android:background="@drawable/btn_ractangle"
-                            android:backgroundTint="#FFBE3C"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:gravity="center"
-                            android:paddingTop="2dp"
-                            android:text="3 Tahun"
-                            android:textColor="@color/white"
-                            android:textSize="12dp" />
-
-                        <TextView
-                            android:id="@+id/text_dukung_anak"
-                            android:layout_width="240dp"
-                            android:layout_height="41dp"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginBottom="14dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:text="Dukung Putri agar berkembang dan pantau terus pencapaiannya"
-                            android:textColor="@color/white"
-                            android:textSize="13dp" />
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="18dp"
-                            android:src="@drawable/ic_btn_data_anak"
-                            android:layout_marginBottom="14dp"
-                            />
 
                     </RelativeLayout>
 
@@ -242,87 +146,11 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:layout_marginHorizontal="30dp"
-                        android:layout_marginTop="25dp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Kategori favorit para Mama"
-                        android:textSize="13dp"
-
-                        />
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                      >
-
-                        <LinearLayout
-                            android:layout_marginTop="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="30dp">
-
-                            <Button
-                                android:onClick="kesehatanFavorit"
-                                android:layout_width="115dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="30dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Kesehatan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <Button
-                                android:layout_width="115dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Pendidikan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <Button
-                                android:layout_width="115dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Permainan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <Button
-                                android:layout_width="115dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="30dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Pola Asuh"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="30dp"
                         android:layout_marginTop="25dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Artikel untuk Mama hari ini"
+                        android:text="Artikel untuk orang tua hari ini"
                         android:textSize="13dp"
 
                         />
@@ -422,17 +250,6 @@
                             android:text="Permainan untuk buah hati"
                             android:textSize="13dp" />
 
-                        <TextView
-                            android:onClick="allGames"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:fontFamily="@font/poppins_medium"
-                            android:text="Lihat semua"
-                            android:textColor="#6FBDE9"
-                            android:textSize="13dp"
-
-                            />
                     </RelativeLayout>
 
                     <GridLayout
@@ -460,12 +277,12 @@
                                 android:orientation="vertical">
 
                                 <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_makanan_sehat"
+                                    android:id="@+id/tic_tac_toe"
                                     android:layout_width="85dp"
                                     android:layout_height="85dp"
                                     android:background="#6BBDED"
                                     android:elevation="10dp"
-                                    android:src="@drawable/games_image"
+                                    android:src="@drawable/icon_tictactoe"
                                     app:contentPaddingTop="5dp"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
@@ -476,7 +293,7 @@
                                     android:layout_marginTop="6dp"
                                     android:fontFamily="@font/poppins_medium"
                                     android:gravity="center"
-                                    android:text="Tebak Hewan"
+                                    android:text="TIC TAC TOE"
                                     android:textColor="#5B5B5B"
                                     android:textSize="13dp" />
 
@@ -498,13 +315,12 @@
                                 android:orientation="vertical">
 
                                 <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_hidup_sehat"
+                                    android:id="@+id/game_mewarnai"
                                     android:layout_width="85dp"
                                     android:layout_height="85dp"
                                     android:background="#ED6BD0"
                                     android:elevation="10dp"
-                                    android:src="@drawable/mengenal_alam_image"
-                                    app:contentPaddingTop="15dp"
+                                    android:src="@drawable/icon_mewarnai"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
                                 <TextView
@@ -514,7 +330,7 @@
                                     android:layout_marginTop="6dp"
                                     android:fontFamily="@font/poppins_medium"
                                     android:gravity="center"
-                                    android:text="Mengenal Alam"
+                                    android:text="Menggambar"
                                     android:textColor="#5B5B5B"
                                     android:textSize="13dp" />
 
@@ -528,36 +344,6 @@
                             android:layout_height="wrap_content"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1">
-
-                            <LinearLayout
-                                android:layout_width="85dp"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="right"
-                                android:orientation="vertical">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_gerak_sehat"
-                                    android:layout_width="85dp"
-                                    android:layout_height="85dp"
-                                    android:background="#AC6BED"
-                                    android:elevation="10dp"
-                                    android:src="@drawable/tebak_alat_makan_image"
-                                    app:contentPadding="5dp"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="6dp"
-                                    android:fontFamily="@font/poppins_medium"
-                                    android:gravity="center"
-                                    android:text="Tebak Gerak Sehat"
-                                    android:textColor="#5B5B5B"
-                                    android:textSize="13dp" />
-
-
-                            </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
@@ -566,483 +352,10 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="110dp" />
+                        android:layout_height="150dp" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/linierlayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/header_aktivitas_anak"
-                            android:layout_width="wrap_content"
-                            android:layout_height="15dp"
-                            android:layout_marginHorizontal="30dp"
-                            android:layout_marginTop="25dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="Aktivitas untuk dilakukan Putri hari ini"
-                            android:textColor="#535351"
-                            android:textSize="13dp" />
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardCornerRadius="20dp"
-                            android:layout_marginHorizontal="30dp"
-                            android:layout_below="@id/header_aktivitas_anak"
-                            android:layout_marginTop="10dp">
-
-                        <com.denzcoskun.imageslider.ImageSlider
-                            android:id="@+id/view_pager1"
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:elevation="10dp"
-                            android:textAlignment="textStart"
-                            android:textDirection="ltr"
-                            />
-                    </androidx.cardview.widget.CardView>
-                </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="20dp">
-
-                        <TextView
-                            android:id="@+id/header_video_untuk_anak"
-                            android:layout_width="wrap_content"
-                            android:layout_height="15dp"
-                            android:layout_marginHorizontal="30dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="Video untuk Putri hari ini"
-                            android:textColor="#535351"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="30dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:onClick="allVideoToDay"
-                            android:text="Lihat semua"
-                            android:textColor="#6FBDE9"
-                            android:textSize="13dp"
-
-                            />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_marginTop="10dp"
-                            android:layout_below="@id/header_video_untuk_anak"
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginHorizontal="30dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/anak_makan_sendiri"
-                                app:shapeAppearanceOverlay="@style/roundImageView" />
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/gradient_rectangle"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="bottom"
-                                android:padding="19dp"
-                                android:text="Belajar mengenal alat makan bersama mama papa yuk!"
-                                android:textColor="@color/white"
-                                android:textSize="14dp" />
-
-                            <ImageButton
-                                android:layout_width="65dp"
-                                android:layout_height="65dp"
-                                android:src="@drawable/ic_play"
-                                android:background="@null"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_marginTop="25dp"
-                        android:id="@+id/header_kategori_favorit_orang_tua"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:layout_marginHorizontal="30dp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="kategori favorit orang tua"
-                        android:textColor="#535351"
-                        android:textSize="13dp"/>
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="10dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <androidx.appcompat.widget.AppCompatButton
-                                android:layout_width="90dp"
-                                android:elevation="10dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="30dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Kesehatan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <androidx.appcompat.widget.AppCompatButton
-                                android:layout_width="90dp"
-                                android:elevation="10dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Pendidikan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <androidx.appcompat.widget.AppCompatButton
-                                android:layout_width="90dp"
-                                android:elevation="10dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Permainan"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                            <androidx.appcompat.widget.AppCompatButton
-                                android:layout_width="90dp"
-                                android:elevation="10dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="30dp"
-                                android:background="@drawable/btn_rectangle_orange"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="Pola Asuh"
-                                android:textAlignment="center"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-
-                    <RelativeLayout
-                        android:layout_marginTop="25dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/header_artikel_untuk_hari_ini"
-                            android:layout_width="wrap_content"
-                            android:layout_height="15dp"
-                            android:layout_marginHorizontal="30dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="Artikel untuk hari ini"
-                            android:textColor="#535351"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="30dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:onClick="allArticel"
-                            android:text="Lihat semua"
-                            android:textColor="#6FBDE9"
-                            android:textSize="13dp"
-                            />
-                 </RelativeLayout>
-
-                    <HorizontalScrollView
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="180dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                style="@style/roundImageView"
-                                android:layout_width="180dp"
-                                android:layout_height="160dp"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_ractangle"
-                                android:elevation="10dp">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@drawable/gradient_rectangle" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@drawable/gradient_rectangle"
-                                    android:fontFamily="@font/poppins_semibold"
-                                    android:gravity="bottom"
-                                    android:padding="19dp"
-                                    android:text="Tips agar anak doyan sayur di usia 3 Tahun"
-                                    android:textColor="@color/white"
-                                    android:textSize="13dp" />
-
-
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                style="@style/roundImageView"
-                                android:layout_width="180dp"
-                                android:layout_height="160dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginRight="30dp"
-                                android:background="@drawable/btn_ractangle"
-                                android:elevation="10dp">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@drawable/gradient_rectangle"
-                                    android:fontFamily="@font/poppins_semibold"
-                                    android:gravity="bottom"
-                                    android:padding="19dp"
-                                    android:text="Pilih mainan yang tepat untuk tumbuh kembang anak"
-                                    android:textColor="@color/white"
-                                    android:textSize="13dp" />
-
-
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
-
-                    <RelativeLayout
-                        android:layout_marginTop="25dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp">
-
-                        <TextView
-                            android:id="@+id/header_permainan_untuk_buah_hati"
-                            android:layout_width="wrap_content"
-                            android:layout_height="15dp"
-                            android:layout_marginHorizontal="30dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="Permainan untuk buah hati"
-                            android:textColor="#535351"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:onClick="allGames"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="30dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:text="Lihat semua"
-                            android:textColor="#6FBDE9"
-                            android:textSize="13dp"
-
-                            />
-
-
-
-
-
-
-                    </RelativeLayout>
-
-
-                    <GridLayout
-                        android:id="@+id/grid_main_menu2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginHorizontal="30dp"
-                        android:layout_marginTop="10dp"
-                        android:columnCount="3"
-                        android:background="@color/white"
-                        android:backgroundTint="@color/white"
-                        android:columnOrderPreserved="false"
-                        android:rowCount="1">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_rowWeight="1"
-                            android:backgroundTint="@color/white"
-                            android:layout_columnWeight="1">
-
-                            <LinearLayout
-                                android:layout_width="85dp"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="left"
-                                android:orientation="vertical">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_makanan_sehat2"
-                                    android:layout_width="85dp"
-                                    android:layout_height="85dp"
-                                    android:background="#6BBDED"
-                                    android:elevation="10dp"
-                                    android:src="@drawable/games_image"
-                                    app:contentPaddingTop="5dp"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="6dp"
-                                    android:fontFamily="@font/poppins_medium"
-                                    android:gravity="center"
-                                    android:text="Tebak Hewan"
-                                    android:textColor="#5B5B5B"
-                                    android:textSize="13dp" />
-
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_rowWeight="1"
-                            android:backgroundTint="@color/white"
-                            android:layout_columnWeight="1">
-
-                            <LinearLayout
-                                android:layout_width="85dp"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_hidup_sehat2"
-                                    android:layout_width="85dp"
-                                    android:layout_height="85dp"
-                                    android:background="#ED6BD0"
-                                    android:elevation="10dp"
-                                    android:src="@drawable/mengenal_alam_image"
-                                    app:contentPaddingTop="15dp"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="6dp"
-                                    android:fontFamily="@font/poppins_medium"
-                                    android:gravity="center"
-                                    android:text="Mengenal Alam"
-                                    android:textColor="#5B5B5B"
-                                    android:textSize="13dp" />
-
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_rowWeight="1"
-                            android:backgroundTint="@color/white"
-                            android:layout_columnWeight="1">
-
-                            <LinearLayout
-                                android:layout_width="85dp"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="right"
-                                android:orientation="vertical">
-
-                                <com.google.android.material.imageview.ShapeableImageView
-                                    android:id="@+id/tebak_gerak_sehat2"
-                                    android:layout_width="85dp"
-                                    android:layout_height="85dp"
-                                    android:background="#AC6BED"
-                                    android:elevation="10dp"
-                                    android:src="@drawable/tebak_alat_makan_image"
-                                    app:contentPadding="5dp"
-                                    app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="6dp"
-                                    android:fontFamily="@font/poppins_medium"
-                                    android:gravity="center"
-                                    android:text="Tebak Gerak Sehat"
-                                    android:textColor="#5B5B5B"
-                                    android:textSize="13dp" />
-
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </GridLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="110dp" />
-
-
-
-
-                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

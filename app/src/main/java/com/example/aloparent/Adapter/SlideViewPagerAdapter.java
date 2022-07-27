@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.aloparent.View.LoginScreen;
+import com.example.aloparent.View.Home;
 import com.example.aloparent.R;
 
 public class SlideViewPagerAdapter extends PagerAdapter {
@@ -52,7 +52,7 @@ public class SlideViewPagerAdapter extends PagerAdapter {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ctx, LoginScreen.class);
+                Intent intent = new Intent(ctx, Home.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
             }
@@ -65,8 +65,8 @@ public class SlideViewPagerAdapter extends PagerAdapter {
                 ind2.setImageResource(R.drawable.dot_unselected);
                 ind3.setImageResource(R.drawable.dot_unselected);
 
-                title.setText("Jadi orang tua yang hebat!");
-                desc.setText("aloparent akan membantu buah hatimu menjadi insan yang bermanfaat di masa depan");
+                title.setText("Edukasi Cara Mendidik Anak");
+                desc.setText("aloparent akan membantu orang tua untuk mendapatkan informasi untuk mengedukasi anak");
                 break;
             case 1:
                 logo.setImageResource(R.drawable.onboarding2);
@@ -74,8 +74,8 @@ public class SlideViewPagerAdapter extends PagerAdapter {
                 ind2.setImageResource(R.drawable.dot_selected);
                 ind3.setImageResource(R.drawable.dot_unselected);
 
-                title.setText("Pantau perkembangannya");
-                desc.setText("aloparent menyediakan kegiatan bermanfaat untuk buah hati yang bisa dipantau perkembangan setiap hari");
+                title.setText("Kelas pembelajaran ");
+                desc.setText("Aloparent menyediakan Pembelajaran untuk anak tentang problem solving, computational thinking, dan creativity");
                 break;
             case 2:
                 logo.setImageResource(R.drawable.onboarding3);
@@ -85,8 +85,8 @@ public class SlideViewPagerAdapter extends PagerAdapter {
 
                 btn.setText("Mulai");
 
-                title.setText("Konsultasi dengan ahlinya");
-                desc.setText("Dengan aloparent kamu bisa terhubung dengan banyak ahli untuk konsultasi permasalahan si buah hati");
+                title.setText("Permainan Mengedukasi");
+                desc.setText("Dengan aloparent anak bermain sekalagus belajar");
                 break;
 
 

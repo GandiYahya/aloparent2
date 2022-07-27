@@ -3,7 +3,9 @@ package com.example.aloparent.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.aloparent.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.imageview.ShapeableImageView;
 
 public class Konseling extends AppCompatActivity {
 
@@ -42,12 +45,6 @@ public class Konseling extends AppCompatActivity {
     }
 
 
-    //ke scren konsling kseshatan
-    public void toKonselingKesehatan(View v){
-        Intent intent = new Intent(Konseling.this, KonselingKesehatanActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +53,9 @@ public class Konseling extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.konseling);
+
+        ShapeableImageView tictactoe = findViewById(R.id.tic_tac_toe2);
+        ShapeableImageView paint = findViewById(R.id.mewarnai);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -81,5 +81,33 @@ public class Konseling extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        tictactoe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openApp("com.example.tictactoe");
+            }
+        });
+
+        paint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openApp("com.raghav.paint");
+            }
+        });
+    }
+
+    public void openApp(String packageName){
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        try {
+            intent.setComponent(new ComponentName(packageName, packageName + ".MainActivity"));
+            startActivity(intent);
+        } catch(Exception e) {
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setData(Uri.parse("market://details?id=" + packageName));
+            startActivity(intent);
+        }
     }
 }

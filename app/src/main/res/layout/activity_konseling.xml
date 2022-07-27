@@ -43,36 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="37dp"
-                android:layout_height="36dp"
-                android:layout_alignParentLeft="true">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="33dp"
-                    android:layout_height="33dp"
-                    android:src="@drawable/ic_jadwal_konseling"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:src="@drawable/rectangle_notificaton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
-                android:text="Konseling"
+                android:text="Permainan"
                 android:textColor="#515151"
                 android:textSize="20dp" />
 
@@ -80,21 +57,6 @@
                 android:layout_width="37dp"
                 android:layout_height="36dp"
                 android:layout_alignParentRight="true">
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="33dp"
-                    android:layout_height="33dp"
-                    android:src="@drawable/ic_chat_konseling"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:src="@drawable/rectangle_notificaton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -119,7 +81,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Konsultasikan masalah si kecil dengan ahlinya"
+                    android:text="belajar dengan cara yang menyenangkan"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
 
@@ -141,7 +103,7 @@
             android:layout_height="18dp"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Pilih Ahli Sesuai Kategori"
+            android:text="Pilih Permainan"
             android:textSize="15dp"
             android:textColor="#515151"/>
 
@@ -170,12 +132,12 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:onClick="toKonselingKesehatan"
+                        android:id="@+id/tic_tac_toe2"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#6BBDED"
                         android:elevation="10dp"
-                        android:src="@drawable/image_konseling_kesehatan"
+                        android:src="@drawable/icon_tictactoe"
                         app:contentPadding="5dp"
                         app:contentPaddingTop="5dp"
                         app:shapeAppearanceOverlay="@style/roundImageView" />
@@ -187,7 +149,7 @@
                         android:layout_marginTop="6dp"
                         android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
-                        android:text="Kesehatan"
+                        android:text="TIC TAC TOE"
                         android:textColor="#5B5B5B"
                         android:textSize="13dp" />
 
@@ -210,13 +172,13 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/mewarnai"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#ED6BD0"
                         android:elevation="10dp"
-                        android:src="@drawable/image_pendidikan_konseling"
+                        android:src="@drawable/icon_mewarnai"
                         app:contentPadding="6dp"
-                        app:contentPaddingTop="15dp"
                         app:shapeAppearanceOverlay="@style/roundImageView" />
 
                     <TextView
@@ -226,7 +188,7 @@
                         android:layout_marginTop="6dp"
                         android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
-                        android:text="Pendidikan"
+                        android:text="Mewarnai"
                         android:textColor="#5B5B5B"
                         android:textSize="13dp" />
 
@@ -242,37 +204,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_columnWeight="1">
 
-                <LinearLayout
-                    android:layout_width="85dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:layout_gravity="right"
-                    android:orientation="vertical">
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="85dp"
-                        android:layout_height="86dp"
-                        android:background="#AC6BED"
-                        android:elevation="10dp"
-                        android:src="@drawable/image_kesehatan_konseling"
-                        app:contentPaddingLeft="7dp"
-                        app:contentPaddingRight="7dp"
-                        app:contentPaddingTop="8dp"
-                        app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:gravity="center"
-                        android:text="Psikologi"
-                        android:textColor="#5B5B5B"
-                        android:textSize="13dp" />
-
-
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -283,37 +215,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_columnWeight="1">
 
-                <LinearLayout
-                    android:layout_marginTop="20dp"
-                    android:layout_width="85dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:orientation="vertical">
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/tebak_makanan_sehat"
-                        android:layout_width="85dp"
-                        android:layout_height="85dp"
-                        android:background="#EDD06B"
-                        android:elevation="10dp"
-                        android:src="@drawable/image_pola_asuh_konseling"
-                        app:contentPadding="8dp"
-                        app:contentPaddingTop="9dp"
-                        app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:gravity="center"
-                        android:text="Kesehatan"
-                        android:textColor="#5B5B5B"
-                        android:textSize="13dp" />
-
-
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -324,36 +226,6 @@
                 android:backgroundTint="@color/white"
                 android:layout_columnWeight="1">
 
-                <LinearLayout
-                    android:layout_marginTop="14dp"
-                    android:layout_width="85dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="85dp"
-                        android:layout_height="85dp"
-                        android:background="#ED6B6B"
-                        android:elevation="10dp"
-                        android:src="@drawable/image_teknologi_konseling"
-                        app:contentPadding="6dp"
-                        app:contentPaddingTop="15dp"
-                        app:shapeAppearanceOverlay="@style/roundImageView" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:gravity="center"
-                        android:text="Pendidikan"
-                        android:textColor="#5B5B5B"
-                        android:textSize="13dp" />
-
-
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

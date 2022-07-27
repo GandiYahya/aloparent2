@@ -52,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
+                android:visibility="visible"
                 android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
@@ -59,7 +60,7 @@
                     android:id="@+id/foto_profil_anak"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/header_icon_kelas" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,7 +73,7 @@
                 android:layout_height="23dp"
                 android:id="@+id/tv_UserName"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Hello, Lesti!"
+                android:text="Hello Anak"
                 android:textColor="#535351"
                 android:textSize="18dp" />
 
@@ -116,7 +117,7 @@
                 android:layout_marginTop="23dp"
                 android:layout_width="wrap_content"
                 android:layout_height="18dp"
-                android:text="Pencapaian hari ini"
+                android:text="Pencapaian pembelajaran anak"
                 android:textSize="15dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:textColor="#515151"
@@ -163,7 +164,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="13dp"
-                    android:text="Dukung Putri agar berkembang dan pantau pencapaiannya"
+                    android:text="Dukung Si Anak agar berkembang dan pantau pencapaiannya"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins_bold"
                     android:layout_marginHorizontal="30dp"

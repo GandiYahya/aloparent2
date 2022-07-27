@@ -169,16 +169,6 @@ public class Kelas extends AppCompatActivity {
         tv_UserName = findViewById(R.id.tv_UserName);
         foto_profil_anak = findViewById(R.id.foto_profil_anak);
 
-        //Get User Data From SharedPref
-        final SharedPrefManager prefManager = new SharedPrefManager(this);
-        UserModel user = prefManager.getUserLogin();
-        String email = user.getUserMail(), username = user.getUserName(), password = user.getUserPassword(), image = user.getUserImage();
-        tv_UserName.setText(username);
-        Picasso.get()
-                .load("http://192.168.43.109:3000/users/userImage/"+email)
-                .fit()
-                .centerCrop()
-                .into(foto_profil_anak);
 
         int pembelajaranHariIni=0;
 

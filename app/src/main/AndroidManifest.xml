@@ -37,43 +37,7 @@
             android:name=".SoalKelas.SoalA"
             android:exported="false" />
         <activity
-            android:name=".View.UbahKataSandi"
-            android:exported="false" />
-        <activity
-            android:name=".View.LupaPasswordNext"
-            android:exported="false" />
-        <activity
-            android:name=".View.LupaPassword"
-            android:exported="false" />
-        <activity
-            android:name=".View.KonfirmasiJadwal"
-            android:exported="false" />
-        <activity
-            android:name=".View.AhliKesehatan"
-            android:exported="false" />
-        <activity
-            android:name=".View.KonselingKesehatanActivity"
-            android:exported="false" />
-        <activity
             android:name=".View.PanduanOrangTuaScreen"
-            android:exported="false" />
-        <activity
-            android:name=".View.UpdateDataAnak"
-            android:exported="false" />
-        <activity
-            android:name=".View.UpdateProfile"
-            android:exported="false" />
-        <activity
-            android:name=".View.ProfileScreen"
-            android:exported="false" />
-        <activity
-            android:name=".View.Notifikasi"
-            android:exported="false" />
-        <activity
-            android:name=".View.DataAnak"
-            android:exported="false" />
-        <activity
-            android:name=".View.favorite"
             android:exported="false" />
         <activity
             android:name=".View.Edukasi"
@@ -95,24 +59,14 @@
             android:exported="false" />
         <activity
             android:name=".View.Home"
-            android:exported="false" />
-        <activity
-            android:name=".View.BerhasilDaftar"
-            android:exported="false" />
-        <activity
-            android:name=".View.BerhasilLogin"
-            android:exported="false" />
-        <activity
-            android:name=".View.RegisterScreen"
-            android:exported="false" />
-        <activity
-            android:name=".View.LoginScreen"
-            android:exported="false" />
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.tictactoe"/>
+                <action android:name="com.raghav.paint"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".View.OnBoardingScreen"
-            android:exported="false" />
-        <activity
-            android:name=".View.UpdateKataSandi"
             android:exported="false" />
         <activity
             android:name=".View.SplashScreen"

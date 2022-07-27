@@ -22,7 +22,7 @@
 
     <item
         android:id="@+id/konseling"
-        android:title="Konseling"
+        android:title="Permainan"
         android:icon="@drawable/konseling_selector"
         />
 

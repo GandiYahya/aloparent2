@@ -134,6 +134,44 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/soal_selesai.xml" value="0.2" />
         <entry key="..\:/alo_parent/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
         <entry key="..\:/alo_parent/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1755" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/drawable/ic_permainan_selec.xml" value="0.133" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/drawable/konseling_selector.xml" value="0.133" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/drawable/navbar_selector.xml" value="0.133" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_ahli_kesehatan.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_artikel.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_artikel1.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_artikel4.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_data_anak.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_edukasi.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_favorite.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_home.xml" value="0.34854771784232363" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_kelas.xml" value="0.33" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_konfirmasi_jadwal.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_konseling.xml" value="0.25" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_login_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_lupa_kata_sandi.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_lupa_password.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_media_player.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_panduan_orang_tua_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_profile_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_register_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_spalshscreen.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_ubah_kata_sandi.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_update_data_anak.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/activity_update_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/jawaban_benar.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/konfirmasi_jadwal_berhasil.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/konseling_kesehatan.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/notifikasi.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/permainan.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/layout/soal_selesai.xml" value="0.22447916666666667" />
+        <entry key="..\:/projeck_aloparent_playstore/app/src/main/res/menu/menu_navigation.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
